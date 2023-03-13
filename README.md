@@ -1,4 +1,4 @@
-# Framework Empire - Anotações
+# Framework Empire - Minhas Anotações
 
 O Empire é um software de pós-exploração. Ou seja, ele facilita a manipulação do sistema após o estabelecimento da conexão entre o alvo (denominado `AGENT`) e o servidor contendo o Empire, também chamado de servidor de comando e controle (denonimado `C2`).
 
