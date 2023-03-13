@@ -15,7 +15,17 @@ Para testes de intrusão, é ideal que se use um servidor cloud, como por exempl
 
 Para o primeiro exemplo, um computador Windows completamente desprotegido, sem antivírus e com o Firewall desligado, será necessário. Ele será nosso alvo.
 
-## Configurações do Empire
+## Instalando o Empire
+
+O Empire pode ser instalado seguindo as orientações do repositório abaixo e clonando os arquivos no seu servidor:
+
+- git clone https://github.com/EmpireProject/Empire
+
+## Configurando o Empire
+
+Após inicializar o Empire (certifique-se de abri-lo com o comando `sudo`, para dar permissões de administrador), é possível ver a lista de comandos do framework por meio do comando `help`. Os três principais componentes são: `modules`, `listeners` e `agents`. Mais informações serão passadas ao longo dessas anotações.
+
+O primeiro passo é criar um `Listener`. Ele será responsável por ficar "ouvindo" uma porta de conexão do servidor C2, na esperança de encontrar o alvo infectado tentando se conectar por ela.
 
 
 
