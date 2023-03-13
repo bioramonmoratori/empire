@@ -21,9 +21,11 @@ O Empire pode ser instalado seguindo as orientações do repositório abaixo e c
 
 - git clone https://github.com/EmpireProject/Empire
 
-## Configurando o Empire
+# Configurações Gerais
 
 Após inicializar o Empire (certifique-se de abri-lo com o comando `sudo`, para dar permissões de administrador), é possível ver a lista de comandos do framework por meio do comando `help`. Os três principais componentes são: `modules`, `listeners` e `agents`. Mais informações serão passadas ao longo dessas anotações.
+
+## Criando o Listener
 
 O primeiro passo é criar um `Listener`. Ele será responsável por "ouvir" uma porta de conexão do servidor C2, na esperança de encontrar o alvo infectado tentando se conectar por ela. 
 
