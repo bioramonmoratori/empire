@@ -48,6 +48,12 @@ Após configurar o receptor que espera a sinalização do Agent, vamos agora ger
 - `set Listener <nome_do_listener>`: determinamos o nome do Listener que nós configuramos, assim o Agent enviará a sinalização para ele
 - `execute`: assim, o código será printado no terminal
 
-Por fim, basta pegar o código, enviar para a máquina alvo, salvar em um bloco de notas com a extensão `.bat` e executá-lo. A conexão será estabelecida e aparecerá na página inicial do Empire.
+Por fim, basta pegar o código, enviar para a máquina alvo, salvar em um bloco de notas com a extensão `.bat` e executá-lo. A conexão será estabelecida e aparecerá na página inicial do Empire com um ID do Agent.
+
+## Interagindo com o Agent e Usando Módulos
+
+- `interact <ID do Agent>`: Permite a interação com o Agent através do Empire
+- `usemodule`: podemos determinar scripts (módulos) que executam diversas ações específicas. Basta acionar o módulo desejado
+- Existem também comandos prontos que podem ser visualizados com os comandos `help` / `info`. Por exemplo o comando `sc` que realiza uma captura de tela da máquina alvo e salva na pasta /Empire/downloads presente no C2. 
 
 
