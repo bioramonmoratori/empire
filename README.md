@@ -38,4 +38,16 @@ Digitando `info` é possível ver as opções de configuração. Neste primeiro 
 - `execute`: inicia o Listener
 - `main`: volta para a página inicial do Empire
 
+## Criando o Stager
+
+Após configurar o receptor que espera a sinalização do Agent, vamos agora gerar o código de Shell Reverse que deverá ser inserido na máquina alvo.
+
+- Se digitamos `usestager` + [TAB], vemos os tipos de executável do código, de acordo com o sistema operacional do Agent. Neste exemplo, usaremos o comando `usestager windows/launcher_bat` para criar um executável Windows.
+- Novamente, usando o comando `info` vemos as opções de configuração
+- `unset OutFile`: o código será gerado diretamente no terminal
+- `set Listener <nome_do_listener>`: determinamos o nome do Listener que nós configuramos, assim o Agent enviará a sinalização para ele
+- `execute`: assim, o código será printado no terminal
+
+Por fim, basta pegar o código, enviar para a máquina alvo, salvar em um bloco de notas com a extensão `.bat` e executá-lo. A conexão será estabelecida e aparecerá na página inicial do Empire.
+
 
